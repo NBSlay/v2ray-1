@@ -1,5 +1,7 @@
 cd /v2raybin
-echo -e "$CONFIG_JSON" > config.json
+echo -e -n "$CONFIG_JSON1" > config.json
+echo -e -n "$UUID"        >> config.json
+echo -e -n "$CONFIG_JSON2 >> config.json
 if [ "$CERT_PEM" != "$KEY_PEM" ]; then
   echo -e "$CERT_PEM" > cert.pem
   echo -e "$KEY_PEM"  > key.pem
